@@ -1,0 +1,19 @@
+.socialIcon{
+    display: flex;
+    gap: 15px;
+}
+.customborder {
+    position: relative;
+  }
+  
+  .customborder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Épaisseur de la bordure */
+    background: linear-gradient(to right, #004C97, #EC1C24);
+    z-index: 1; /* Pour s'assurer que la bordure est en avant-plan */
+  }
+  

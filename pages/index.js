@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '@/components/Header/Header'
 import Bouton from '@/components/Button/Button'
-
+import Footer from '@/components/Footer/Footer';
 export default function Home() {
   return (
     <>
@@ -101,15 +101,16 @@ export default function Home() {
           </div>
           <div className='width2 mx-auto py-5' style={{ zIndex: '99', position: 'relative' }}>
             <h1 className='text-center mb-5 ' style={{ color: 'white', zIndex: '99' }}>Nos produits</h1>
-            <div className="conteneur" style={{ width: '100%', zIndex: '99' }}>
-              <img src="/images/BA_Website_AUTO-10.png" alt="Image 1" className='img1' />
-              <img src="/images/BA_Website_B-Travel-10.png" alt="Image 2" className='img2' />
-              <br className='br' />
-              <img src="/images/BA_Website_B-Glass-10.png" alt="Image 3" className='img3' />
-              <img src="/images/BA_Website_PagesHOME PAGE-10.png" alt="Image 4" className='img4' />
+            <div className={`${style.conteneur}`} style={{ width: '100%', zIndex: '99' }}>
+              <img src="/images/BA_Website_AUTO-10.png" alt="Image 1" className={`${style.img1}`} />
+              <img src="/images/BA_Website_B-Travel-10.png" alt="Image 2" className={`${style.img2}`} />
+              <br className={`${style.br}`} />
+              <img src="/images/BA_Website_B-Glass-10.png" alt="Image 3" className={`${style.img3}`} />
+              <img src="/images/BA_Website_PagesHOME PAGE-10.png" alt="Image 4" className={`${style.img4}`} />
             </div></div>
 
         </div>
+        <Footer />
       </main>
     </>
   )
