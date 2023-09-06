@@ -1,0 +1,38 @@
+.button {
+    /* Mettez le bouton en tant que conteneur flex pour centrer le premier span */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    gap: 15px;
+    color: #004C97;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px rgba(236, 28, 36, 1);
+    margin: auto;
+}
+
+.circle {
+    /* Style pour le premier span */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    /* Ajustez selon votre besoin */
+    height: 25px;
+    /* Ajustez selon votre besoin */
+    border-radius: 50%;
+    background: linear-gradient(to right, #EC1C24, #004C97);
+}
+
+.fleche {
+    /* Style pour le deuxième span */
+    color: white;
+    /* Couleur du texte */
+    font-weight: bold;
+    font-size: 1rem;
+}

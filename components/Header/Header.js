@@ -9,8 +9,8 @@ const Header = () => {
   
           <div className={styles.rightContainer}>
             <div className={styles.buttons}>
-            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: 'white'}} />
-              <div>FR <span>▼</span></div>
+            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: 'white',width:'20px'}} />
+              <div className='d-flex'>FR <span style={{marginLeft:'5px'}}>▼</span></div>
             </div>
             
             <nav className={styles.nav}>
