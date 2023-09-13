@@ -1,6 +1,6 @@
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-const Contact = () => {
+const BHome = () => {
     return (
         <main>
             <Header />
@@ -8,4 +8,4 @@ const Contact = () => {
         </main>
     );
 }
-export default Contact;
+export default BHome;

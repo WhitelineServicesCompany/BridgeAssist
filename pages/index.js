@@ -14,7 +14,7 @@ export default function Home() {
         <title>Bridge Assistant</title>
       </Head>
       <main>
-        <Header />
+        <Header imgHeader={'BA_Website_PagesHOME PAGE-10.png'} />
         <div className={`text-center m-auto mt-5 width2`} style={{ color: '#004C97' }}>
           <h1>Pourquoi nous choisir ?</h1>
           <p className='m-3'>Choisir Bridge Assist, c'est opter pour une tranquillité d'esprit inégalée. Nous offrons une assistance personnalisée, réactive et innovante. Découvrez
