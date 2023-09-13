@@ -1,6 +1,7 @@
 import styles from './Header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 const Header = () => {
     return (
         <header className={styles.header} >
@@ -14,11 +15,11 @@ const Header = () => {
             </div>
             
             <nav className={styles.nav}>
-              <a href="#" className={styles.navLink}>Qui sommes nous</a>
-              <a href="#" className={styles.navLink}>Nos produits</a>
-              <a href="#" className={styles.navLink}>Conseils & FAQ</a>
-              <a href="#" className={styles.navLink}>Contact</a>
-              <a href="#" className={styles.navLink}>Actualités</a>
+              <Link href="/qui-sommes-nous" className={styles.navLink}>Qui sommes nous</Link>
+              <Link href="/nos-produits" className={styles.navLink}>Nos produits</Link>
+              <Link href="/conseil-faq" className={styles.navLink}>Conseils & FAQ</Link>
+              <Link href="/contact" className={styles.navLink}>Contact</Link>
+              <Link href="/actualites" className={styles.navLink}>Actualités</Link>
             </nav>
           </div>
         </div>
