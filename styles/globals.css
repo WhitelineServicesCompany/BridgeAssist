@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.blueColor {
+    color: #004C97;
+}
+
 /* Styles de largeur */
 .width2 {
     width: 80%;
@@ -12,13 +16,23 @@
 /* Styles spécifiques aux tablettes (768px <= largeur < 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .width2 {
-        width: 96%;
+        width: 96% !important;
     }
 }
 
 /* Styles mobiles (largeur <= 767px) */
 @media screen and (max-width: 767px) {
     .width2 {
-        width: 96%;
+        width: 96% !important;
     }
+}
+
+@media screen and (min-width: 768px) {
+    #offcanvasNavbarDropdown-expand-md {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+.dropdown-menu{
+    background-color: red !important;
 }

@@ -1,0 +1,45 @@
+.logo {
+    width: 130px;
+    height: auto;
+}
+.nav {
+    display: flex;
+    gap: 30px;
+}
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column !important;
+        
+    }
+    .rightContainer{
+        align-items: flex-start !important;
+    }
+    .nav a {
+        color: black !important;
+    }
+    .buttons {
+        color: black;
+    }
+}
