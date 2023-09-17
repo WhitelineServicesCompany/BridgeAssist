@@ -37,8 +37,6 @@
 /* Styles pour les images dans le conteneur */
 .conteneur img {
     width: 50% !important;
-    height: 50px !important;
-    min-height: 50% !important;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 

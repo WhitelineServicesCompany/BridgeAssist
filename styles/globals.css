@@ -25,6 +25,9 @@
     .width2 {
         width: 96% !important;
     }
+    .brNone{
+        display: none !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
