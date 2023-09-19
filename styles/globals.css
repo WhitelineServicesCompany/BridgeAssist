@@ -7,7 +7,9 @@
 .blueColor {
     color: #004C97;
 }
-
+.redColor {
+    color: #EC1C24;
+}
 /* Styles de largeur */
 .width2 {
     width: 80%;

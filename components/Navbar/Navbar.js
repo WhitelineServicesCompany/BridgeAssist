@@ -14,7 +14,7 @@ function NavbarComponent() {
             {['md'].map((expand) => (
                 <Navbar key={expand} expand={expand} className=" py-3 mx-auto" style={{ width: '90%', borderBottom: '1px solid white' }}>
                     <Container fluid>
-                        <img src="images/unnamed.png" alt="Logo" className={styles.logo} />
+                        <img src="/images/unnamed.png" alt="Logo" className={styles.logo} />
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -47,14 +47,14 @@ function NavbarComponent() {
                                                 id={`offcanvasNavbarDropdown-expand-${expand}`}
                                                 className={` ${styles.navLink}`}
                                             >
-                                                <NavDropdown.Item href="#action3">B-AUTO</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action4">
+                                                <NavDropdown.Item href="/Produits/B-Auto">B-AUTO</NavDropdown.Item>
+                                                <NavDropdown.Item href="/Produits/B-Travel">
                                                     B-TRAVEL
                                                 </NavDropdown.Item>
-                                                <NavDropdown.Item href="#action5">
+                                                <NavDropdown.Item href="/Produits/B-Glass">
                                                    B-GLASS
                                                 </NavDropdown.Item>
-                                                <NavDropdown.Item href="#action5">
+                                                <NavDropdown.Item href="/Produits/B-Home">
                                                    B-HOME
                                                 </NavDropdown.Item>
                                             </NavDropdown>

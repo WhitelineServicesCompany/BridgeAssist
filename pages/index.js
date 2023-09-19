@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h2 className='text-center' style={{ color: '#004C97' }}>Explorez Bridge Assist en téléchargeant notre présentation</h2>
+        <h1 className="text-center fs-4 blueColor">Explorez Bridge Assist en téléchargeant notre présentation</h1>
         <Bouton />
 
         <div style={{ position: 'relative' }}>

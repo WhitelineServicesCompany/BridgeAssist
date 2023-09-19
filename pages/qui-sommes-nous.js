@@ -26,12 +26,12 @@ const QuiSommesNous = () => {
                     <div className="col-md-4 col-sm-12 d-flex"><CardVal text='nous nous engageons à répondre rapidement
                      et efficacement aux besoins de nos clients.' title='Réactivité' img='écoute-.png' /></div>
                     <div className="col-md-4 col-sm-12"><CardVal text="Nous valorisons l'innovation et cherchons
-constamment à améliorer nos services et l'expérience
-que nous offrons à nos clients." title='Innovation' img='Innovationn.png' /></div>
+                     constamment à améliorer nos services et l'expérience
+                    que nous offrons à nos clients." title='Innovation' img='Innovationn.png' /></div>
                     <div className="col-md-4 col-sm-12"><CardVal text='nous sommes déterminés à maintenir une relation
-humaine et personnalisée avec nos
-clients, leur assurant un accompagnement de
-qualité.' title='Proximité' img='proximité.png' /></div>
+                    humaine et personnalisée avec nos
+                    clients, leur assurant un accompagnement de
+                    qualité.' title='Proximité' img='proximité.png' /></div>
                 </div>
             </div>
             <div className="mb-5">
@@ -58,7 +58,7 @@ qualité.' title='Proximité' img='proximité.png' /></div>
                             <h1 className="mx-3 fw-bold">Vision</h1>
                             <div className="d-flex align-items-center justify-content-end" style={{ width: '100%' }}>
                                 <div className="mb-5">Notre vision est de devenir la référence en matière d'assistance en Algérie en
-                                   <br className="brNone" /> révolutionnant le paysage des assurances.</div>
+                                    <br className="brNone" /> révolutionnant le paysage des assurances.</div>
                             </div>
 
                         </div>
