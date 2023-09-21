@@ -10,9 +10,15 @@
 .redColor {
     color: #EC1C24;
 }
+.bg-red{
+  background-color: #EC1C24;
+}
 /* Styles de largeur */
 .width2 {
     width: 80%;
+}
+.width3 {
+    width: 80% !important;
 }
 
 /* Styles spécifiques aux tablettes (768px <= largeur < 1024px) */
@@ -40,4 +46,86 @@
 }
 .dropdown-menu{
     background-color: #EC1C24 !important;
+}
+
+
+.collapsible-container {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #EFF4F9;
+  }
+  
+  .collapsible-container .header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #004C97;
+  }
+  
+  .collapsible-container .header h3 {
+    margin: 0;
+  }
+  
+  .collapsible-container .arrow {
+    font-size: 18px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .collapsible-container.open .arrow {
+    transform: rotate(180deg);
+  }
+  .collapsible-container.open .header {
+    color:#EC1C24;
+    border-bottom: 1px solid #004C97;
+  }
+  
+  .collapsible-container .content {
+    padding: 10px;
+    display: none;
+  }
+  
+  .collapsible-container.open .content {
+    display: block;
+  }
+  /********/
+  form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #004C97;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
 }

@@ -6,7 +6,7 @@ import { FaGreaterThan } from 'react-icons/fa';
 const BGlass = () => {
     return (
         <main>
-            <Header imgHeader={'BA_Website_B-Glass-10.png'} />
+            <Header imgHeader={'glassFiltre.png'} />
             <div className={`${styles.BFlex} width2 my-5 blueColor`}>
                 <div className={`${styles.leftContainer}`}>
                     <h1>B-Glass :<br />
@@ -35,7 +35,7 @@ const BGlass = () => {
                     <div><h2 className="blueColor my-3 text-end">Découvrir nos packs <FaGreaterThan className="fs-6 redColor" style={{}} /></h2></div>
                 </div>
                 <div className={`${styles.rightContainer}`}>
-                    <div className={`${styles.image}`}>
+                <div className={`${styles.image}`} style={{ backgroundImage: `url('/images/BA_Website_B-Glass-10.png')` }}>
 
                     </div>
                     <div className={`${styles.image2}`}>

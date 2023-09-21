@@ -37,7 +37,7 @@ const BAuto = () => {
                     <div><h2 className="blueColor my-3 text-end">Découvrir nos packs <FaGreaterThan className="fs-6 redColor" style={{}} /></h2></div>
                 </div>
                 <div className={`${styles.rightContainer}`}>
-                    <div className={`${styles.image}`}>
+                    <div className={`${styles.image}`} style={{ backgroundImage: `url('/images/bauto.png')` }}>
 
                     </div>
                     <div className={`${styles.image2}`}>
