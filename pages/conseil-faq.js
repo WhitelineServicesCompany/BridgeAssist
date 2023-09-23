@@ -6,7 +6,7 @@ import CollapsibleContainer from '@/components/Collapse/CollapsibleContainer'
 const ConseilFaq = () => {
     return (
         <main>
-            <Header imgHeader={'Conseil&Faq.png'} />
+            <Header imgHeader={'Conseil&Faq.png'} title="Conseils & FAQ" />
             <main>
                 <section>
                     <div className={`width2 mx-auto my-5 blueColor d-flex`}>

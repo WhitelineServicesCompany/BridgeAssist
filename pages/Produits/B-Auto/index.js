@@ -6,7 +6,8 @@ import { FaGreaterThan } from 'react-icons/fa';
 const BAuto = () => {
     return (
         <main>
-            <Header imgHeader={'BA_Website_AUTO-10.png'} />
+            <Header imgHeader={'BA_Website_AUTO-10.png'} title='B-Auto : Assistance Routière' subTitle='Prenez la route en toute
+confiance avec B-Auto.' />
             <div className={`${styles.BFlex} width2 my-5 blueColor`}>
                 <div className={`${styles.leftContainer}`}>
                     <h1>B-Auto : <br />

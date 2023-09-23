@@ -4,7 +4,7 @@ import CardVal from "@/components/Card/Card";
 const QuiSommesNous = () => {
     return (
         <main>
-            <Header imgHeader={'CONTAACT.png'} />
+            <Header imgHeader={'CONTAACT.png'} title='Qui sommes-nous ?' />
             <div className="width2 mx-auto py-3 blueColor">
                 <p style={{ fontSize: '140%' }}>À propos de Bridge Assist</p>
                 <h1 className="my-3">L’essence de Bridge Assist : <br />

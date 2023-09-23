@@ -6,7 +6,7 @@ const Contact = () => {
     const [selectedButton, setSelectedButton] = useState('client');
     return (
         <main>
-            <Header imgHeader={'BA_Website_Pages-version-MobV2.png'} />
+            <Header imgHeader={'BA_Website_Pages-version-MobV2.png'} title="Nous contacter" />
             <div className={`row width2 mx-auto blueColor my-5`} style={{ boxShadow: '0px 0px 15px rgba(0, 0, 0, 1)' }}>
                 <div className={`col-md-7 col-sm-12 py-5`} style={{ backgroundColor: '#EFF4F9' }}>
                     <div className="px-3">
@@ -16,14 +16,14 @@ const Contact = () => {
                                 style={{ borderRadius: '50px' }}
                                 onClick={() => setSelectedButton('client')}
                             >
-                                <h2>Service Client</h2>
+                                <h2 className="fs-6 my-1">Service Client</h2>
                             </div>
                             <div
                                 className={`px-3 py-1 ${selectedButton === 'carriere' ? 'bg-red text-white' : ''}`}
                                 style={{ borderRadius: '50px' }}
                                 onClick={() => setSelectedButton('carriere')}
                             >
-                                <h2>Carrière</h2>
+                                <h2 className="fs-6 my-1">Carrière</h2>
                             </div>
                         </div>
                         {selectedButton === 'client' && (

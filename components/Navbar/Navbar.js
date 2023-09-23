@@ -9,12 +9,15 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 function NavbarComponent() {
+
     return (
         <>
             {['md'].map((expand) => (
                 <Navbar key={expand} expand={expand} className=" py-3 mx-auto" style={{ width: '90%', borderBottom: '1px solid white' }}>
                     <Container fluid>
-                        <img src="/images/unnamed.png" alt="Logo" className={styles.logo} />
+                        <Link href="/">
+                            <img src="/images/unnamed.png" alt="Logo" className={styles.logo} />
+                        </Link>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -23,12 +26,14 @@ function NavbarComponent() {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    <img
-                                        src="/images/LOGO-14.png"
-                                        alt="Innovation et expertise"
-                                        style={{ width: '130px', height: 'auto' }}
+                                    <Link href='/'>
+                                        <img
+                                            src="/images/LOGO-14.png"
+                                            alt="Innovation et expertise"
+                                            style={{ width: '130px', height: 'auto' }}
 
-                                    />
+                                        />
+                                    </Link>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
@@ -52,10 +57,10 @@ function NavbarComponent() {
                                                     B-TRAVEL
                                                 </NavDropdown.Item>
                                                 <NavDropdown.Item href="/Produits/B-Glass">
-                                                   B-GLASS
+                                                    B-GLASS
                                                 </NavDropdown.Item>
                                                 <NavDropdown.Item href="/Produits/B-Home">
-                                                   B-HOME
+                                                    B-HOME
                                                 </NavDropdown.Item>
                                             </NavDropdown>
 

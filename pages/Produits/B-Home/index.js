@@ -6,7 +6,8 @@ import { FaGreaterThan } from 'react-icons/fa';
 const BHome = () => {
     return (
         <main>
-            <Header imgHeader={'BA_Website_PagesHOME PAGE-10.png'} />
+            <Header imgHeader={'BA_Website_PagesHOME PAGE-10.png'} title="B-Home : Assistance Domiciliaire" subTitle="L'assistance à domicile
+n'a jamais été aussi facile avec B-Home." />
             <div className={`${styles.BFlex} width2 my-5 blueColor`}>
                 <div className={`${styles.leftContainer}`}>
                     <h1>B-Home :<br />
@@ -37,7 +38,7 @@ const BHome = () => {
                     <div><h2 className="blueColor my-3 text-end">Découvrir nos packs <FaGreaterThan className="fs-6 redColor" style={{}} /></h2></div>
                 </div>
                 <div className={`${styles.rightContainer}`}>
-                <div className={`${styles.image}`} style={{ backgroundImage: `url('/images/Plombier.jpg')` }}>
+                    <div className={`${styles.image}`} style={{ backgroundImage: `url('/images/Plombier.jpg')` }}>
 
                     </div>
                     <div className={`${styles.image2}`}>

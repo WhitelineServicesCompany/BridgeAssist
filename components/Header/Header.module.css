@@ -3,16 +3,52 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 95vh;
-    min-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: 100%;
     border-bottom-left-radius: 60% 40%;
     border-bottom-right-radius: 60% 40%;
     color: white;
 }
 
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+    margin: auto;
+}
+
+.textContainer {
+    width: 40%;
+    margin-top: -5vh;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Media queries */
+
 @media screen and (max-width: 768px) {
     .header {
-        height: 45vh !important;
+        height: 45vh;
     }
+
+    .textContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .titleHeader {
+        font-size: 40px;
+    }
+
+    .subHeader {
+        font-size: 24px;
+    }
+
 }
