@@ -15,8 +15,16 @@ confiance avec B-Auto.' />
                 </div>
                 <div className={`${styles.rightContainer}`}></div>
             </div>
+            <div className={`d-none ${styles.imgtop}`}>
+                    <div className={`${styles.imag1} mx-auto`} style={{ width:'80%',height:'250px' }}>
+                  <div className={`${styles.imag2}`} style={{backgroundImage: `url('/images/bauto.png')`}}>
+
+                    </div>
+                    </div>
+                   
+                </div>
             <div className={`${styles.BFlex} width2 my-5 blueColor`}>
-                <div className={`${styles.leftContainer} `} style={{ backgroundColor: '#EFF4F9', boxShadow: ' 0 0 20px rgba(0, 0, 0, 0.5)' }}>
+                <div className={`${styles.leftContainer} ${styles.leftContainer2}`} style={{ backgroundColor: '#EFF4F9', boxShadow: ' 0 0 20px rgba(0, 0, 0, 0.5)' }}>
                     <h2 className="redColor">Description du produit :</h2>
                     <p className="fw-semibold">
                         Notre assistance routière est disponible en trois packs : Classique, Silver et Gold.

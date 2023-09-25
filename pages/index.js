@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Header from '@/components/Header/Header'
 import Bouton from '@/components/Button/Button'
 import Footer from '@/components/Footer/Footer';
+import Link from 'next/link';
 export default function Home() {
   return (
     <>
@@ -102,16 +103,19 @@ export default function Home() {
           <div className='width2 mx-auto py-5' style={{ zIndex: '99', position: 'relative' }}>
             <h1 className='text-center mb-5 ' style={{ color: 'white', zIndex: '99' }}>Nos produits</h1>
             <div className={`${style.conteneur}`} style={{ width: '100%', zIndex: '99' }}>
-              <div className={`${style.contimg} ${style.img1}`}>
-                <img src="/images/BA_Website_AUTO-10.png" alt="Image 1" className={`${style.img1}`} />
-                <div className={`${style.Hovcontimg} text-white`}>
-                  <h1 className='mb-4'>B-AUTO</h1>
-                  <p className={`${style.para} width2 text-center`}>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam</p>
-                </div>
-              </div>
-              <div className={`${style.contimg} ${style.img2}`}>
+              <Link href="/Produits/B-Auto" legacyBehavior style={{width:'50%'}}>
+              <div style={{cursor: 'pointer'}} className={`${style.contimg} ${style.img1}`}>
+                    <img src="/images/BA_Website_AUTO-10.png" alt="Image 1" className={`${style.img1}`} />
+                    <div className={`${style.Hovcontimg} text-white`}>
+                      <h1 className='mb-4'>B-AUTO</h1>
+                      <p className={`${style.para} width2 text-center`}>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam</p>
+                    </div>
+                  </div>
+              </Link>
+              <Link href="/Produits/B-Travel" legacyBehavior style={{width:'50%'}}>
+    <div style={{cursor: 'pointer'}}  className={`${style.contimg} ${style.img2}`}>
                 <img src="/images/BA_Website_B-Travel-10.png" alt="Image 2" className={`${style.img2}`} />
                 <div className={`${style.Hovcontimg} text-white`}>
                   <h1 className='mb-4'>B-TRAVEL</h1>
@@ -120,8 +124,10 @@ export default function Home() {
                     laoreet dolore magna aliquam</p>
                 </div>
               </div>
+              </Link>
               <br className={`${style.br}`} />
-              <div className={`${style.contimg} ${style.img3}`}>
+              <Link href="/Produits/B-Glass" legacyBehavior style={{width:'50%'}}>
+              <div style={{cursor: 'pointer'}}  className={`${style.contimg} ${style.img3}`}>
                 <img src="/images/glassFiltre.png" alt="Image 3" className={`${style.img3}`} />
                 <div className={`${style.Hovcontimg} text-white`}>
                   <h1 className='mb-4'>B-GLASS</h1>
@@ -130,7 +136,9 @@ export default function Home() {
                     laoreet dolore magna aliquam</p>
                 </div>
               </div>
-              <div className={`${style.contimg} ${style.img4}`}>
+              </Link>
+              <Link href="/Produits/B-Home" legacyBehavior style={{width:'50%'}}>
+              <div style={{cursor: 'pointer'}}  className={`${style.contimg} ${style.img4}`}>
                 <img src="/images/BA_Website_PagesHOME PAGE-10.png" alt="Image 4" className={`${style.img4}`} />
                 <div className={`${style.Hovcontimg} text-white`}>
                   <h1 className='mb-4'>B-HOME</h1>
@@ -139,6 +147,7 @@ export default function Home() {
                     laoreet dolore magna aliquam</p>
                 </div>
               </div>
+              </Link>
             </div></div>
 
         </div>
