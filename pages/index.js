@@ -20,8 +20,8 @@ export default function Home() {
           <p className='m-3'>Choisir Bridge Assist, c'est opter pour une tranquillité d'esprit inégalée. Nous offrons une assistance personnalisée, réactive et innovante. Découvrez
             pourquoi nous sommes le choix idéal :</p>
         </div>
-        <div className="row m-0 m-auto width2 mt-5 mb-5">
-          <div className="col-lg-4 col-md-4 col-sm-12" >
+        <div className="row m-0 m-auto width2 mt-5">
+          <div className="col-lg-4 col-md-4 col-sm-12 mb-5" >
             <div className={`${style.rounded1} ${style.gradientbox} ${style.contentbox}`}>
               <Image
                 src="/images/Innovation et expertise-11.png"
@@ -37,7 +37,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-4 col-sm-12 mb-5">
             <div className={`${style.rounded1} ${style.gradientbox} ${style.contentbox}`}>
               <Image
                 src="/images/Service Complet-11.png"
@@ -64,7 +64,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-4 col-sm-12 mb-5">
             <div className={`${style.rounded1} ${style.gradientbox} ${style.contentbox}`}>
               <Image
                 src="/images/Proximité-11.png"
@@ -102,11 +102,43 @@ export default function Home() {
           <div className='width2 mx-auto py-5' style={{ zIndex: '99', position: 'relative' }}>
             <h1 className='text-center mb-5 ' style={{ color: 'white', zIndex: '99' }}>Nos produits</h1>
             <div className={`${style.conteneur}`} style={{ width: '100%', zIndex: '99' }}>
-              <img src="/images/BA_Website_AUTO-10.png" alt="Image 1" className={`${style.img1}`} />
-              <img src="/images/BA_Website_B-Travel-10.png" alt="Image 2" className={`${style.img2}`} />
+              <div className={`${style.contimg} ${style.img1}`}>
+                <img src="/images/BA_Website_AUTO-10.png" alt="Image 1" className={`${style.img1}`} />
+                <div className={`${style.Hovcontimg} text-white`}>
+                  <h1 className='mb-4'>B-AUTO</h1>
+                  <p className={`${style.para} width2 text-center`}>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam</p>
+                </div>
+              </div>
+              <div className={`${style.contimg} ${style.img2}`}>
+                <img src="/images/BA_Website_B-Travel-10.png" alt="Image 2" className={`${style.img2}`} />
+                <div className={`${style.Hovcontimg} text-white`}>
+                  <h1 className='mb-4'>B-TRAVEL</h1>
+                  <p className={`${style.para} width2 text-center`}>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam</p>
+                </div>
+              </div>
               <br className={`${style.br}`} />
-              <img src="/images/BA_Website_B-Glass-10.png" alt="Image 3" className={`${style.img3}`} />
-              <img src="/images/BA_Website_PagesHOME PAGE-10.png" alt="Image 4" className={`${style.img4}`} />
+              <div className={`${style.contimg} ${style.img3}`}>
+                <img src="/images/glassFiltre.png" alt="Image 3" className={`${style.img3}`} />
+                <div className={`${style.Hovcontimg} text-white`}>
+                  <h1 className='mb-4'>B-GLASS</h1>
+                  <p className={`${style.para} width2 text-center`}>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam</p>
+                </div>
+              </div>
+              <div className={`${style.contimg} ${style.img4}`}>
+                <img src="/images/BA_Website_PagesHOME PAGE-10.png" alt="Image 4" className={`${style.img4}`} />
+                <div className={`${style.Hovcontimg} text-white`}>
+                  <h1 className='mb-4'>B-HOME</h1>
+                  <p className={`${style.para} width2 text-center`}>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam</p>
+                </div>
+              </div>
             </div></div>
 
         </div>

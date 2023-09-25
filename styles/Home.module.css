@@ -36,10 +36,39 @@
 
 /* Styles pour les images dans le conteneur */
 .conteneur img {
+    width: 100% !important;
+    height: 100% !important;
+}
+.contimg{
     width: 50% !important;
+    position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
+.conteneur .contimg:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    z-index: 99999999999999;
+}
+.Hovcontimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.para{
+    display: none;
+}
+.Hovcontimg:hover{
+    justify-content: center !important;
+}
+.Hovcontimg:hover .para{
+    display: block !important;
+}
 /* Styles d'agrandissement au survol */
 .conteneur img:hover {
     transform: scale(1.1);

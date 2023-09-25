@@ -1,13 +1,14 @@
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import styles from "@/styles/Contact.module.css"
+import Image from "next/image";
 import React, { useState } from 'react';
 const Contact = () => {
     const [selectedButton, setSelectedButton] = useState('client');
     return (
         <main>
             <Header imgHeader={'BA_Website_Pages-version-MobV2.png'} title="Nous contacter" />
-            <div className={`row width2 mx-auto blueColor my-5`} style={{ boxShadow: '0px 0px 15px rgba(0, 0, 0, 1)' }}>
+            <div className={`row width2 mx-auto blueColor my-5 ${styles.margB}`} style={{ boxShadow: '0px 0px 15px rgba(0, 0, 0, 1)' }}>
                 <div className={`col-md-7 col-sm-12 py-5`} style={{ backgroundColor: '#EFF4F9' }}>
                     <div className="px-3">
                         <div className={`d-flex`} style={{ gap: '10px' }}>
@@ -85,7 +86,7 @@ const Contact = () => {
                 </div>
                 <div className={`col-md-5 col-sm-12 ${styles.infoContact} d-flex flex-column justify-content-center align-items-center py-5`} style={{ padding: '20px' }}>
                     {/* Information Section */}
-                    <div className="d-flex flex-column align-items-start text-white" style={{gap:'20px'}}>
+                    <div className="d-flex flex-column align-items-start text-white" style={{ gap: '20px' }}>
                         <div className="d-flex align-items-center mb-2">
                             <img src="/images/Icones/position.png" alt="Address Icon" width="40" height="40" />
                             <span className="mx-3">43, Lorem Ipsum Lorem <br />
@@ -102,25 +103,60 @@ const Contact = () => {
                     </div>
 
                     {/* Social Media Section */}
-                    <div className="d-flex flex-column align-items-center mt-auto"> {/* 'mt-auto' pour pousser le contenu vers le bas */}
-                        <div className="mb-3">Retrouvez-nous sur</div>
-                        <div className="d-flex">
-                            {/* Remplacez ces liens par les vôtres et ajoutez plus si nécessaire */}
-                            <a href="https://facebook.com" className="mx-2">
-                                <img src="/path/to/facebook-icon.png" alt="Facebook Icon" width="24" height="24" />
+                    <div className="d-flex flex-column align-items-center mt-auto text-white"> {/* 'mt-auto' pour pousser le contenu vers le bas */}
+                        <p className="mb-3 fw-semibold">Retrouvez-nous sur</p>
+                        <div className="d-flex" style={{ gap: '20px' }}>
+                            <a>
+                                <Image
+                                    src="/images/Icones/RS-14.png"
+                                    alt="Innovation et expertise"
+                                    width={10}
+                                    height={20}
+                                />
+
                             </a>
-                            <a href="https://twitter.com" className="mx-2">
-                                <img src="/path/to/twitter-icon.png" alt="Twitter Icon" width="24" height="24" />
+                            <a>
+                                <Image
+                                    src="/images/Icones/RS-16.png"
+                                    alt="Innovation et expertise"
+                                    width={20}
+                                    height={20}
+                                />
                             </a>
-                            <a href="https://instagram.com" className="mx-2">
-                                <img src="/path/to/instagram-icon.png" alt="Instagram Icon" width="24" height="24" />
+                            <a>
+                                <Image
+                                    src="/images/Icones/RS-17.png"
+                                    alt="Innovation et expertise"
+                                    width={20}
+                                    height={20}
+                                />
                             </a>
-                            {/* ... Ajoutez plus d'icônes si nécessaire ... */}
+                            <a>
+                                <Image
+                                    src="/images/Icones/RS-15.png"
+                                    alt="Innovation et expertise"
+                                    width={20}
+                                    height={20}
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </div>
+            <iframe
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl'
+                style={{
+                    border: '0',
+                    width: '100%',
+                    height: '60vh',
+                    borderTopLeftRadius: '50% 50%',  // Arrondir le coin supérieur gauche
+                    borderTopRightRadius: '50% 50%',  // Arrondir le coin supérieur droit
+                }}
+                className={`${styles.Index}`}
+                loading='lazy'
+            ></iframe>
+
             <Footer />
         </main>
     );

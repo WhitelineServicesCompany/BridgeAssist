@@ -1,0 +1,15 @@
+.missions {
+    background-image: url('/images/Mission-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.vision {
+    background-image: url('/images/Vision-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}

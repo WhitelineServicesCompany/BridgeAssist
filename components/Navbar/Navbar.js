@@ -6,9 +6,18 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 function NavbarComponent() {
+    const Router = useRouter();
+    const isActif = (paths) => {
+        if (Array.isArray(paths)) {
+            return paths.some(path => Router.pathname === path);
+        }
+        return Router.pathname === paths;
+    }
+
 
     return (
         <>
@@ -41,16 +50,15 @@ function NavbarComponent() {
                                     <div className={styles.rightContainer}>
                                         <div className={styles.buttons}>
                                             <FontAwesomeIcon icon={faMagnifyingGlass} style={{ width: '20px' }} />
-                                            <div className='d-flex'>FR <span style={{ marginLeft: '5px' }}>▼</span></div>
                                         </div>
 
                                         <nav className={styles.nav}>
-                                            <Link href="/qui-sommes-nous" className={styles.navLink}>Qui sommes nous</Link>
+                                            <Link href="/qui-sommes-nous" className={`${isActif('/qui-sommes-nous') ? styles.active : ''} ${styles.navLink}`}>Qui sommes-nous ?</Link>
 
                                             <NavDropdown
-                                                title={<span className="titleClass" style={{ height: '100%', alignItems: 'top' }}>Nos produits</span>}
+                                                title={<span className={`titleClass ${isActif(['/Produits/B-Auto', '/Produits/B-Travel', '/Produits/B-Glass', '/Produits/B-Home']) ? styles.active : ''}`} style={{ height: '100%', alignItems: 'top' }}>Nos produits</span>}
                                                 id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                                className={` ${styles.navLink}`}
+                                                className={`${styles.navLink}`}
                                             >
                                                 <NavDropdown.Item href="/Produits/B-Auto">B-AUTO</NavDropdown.Item>
                                                 <NavDropdown.Item href="/Produits/B-Travel">
@@ -64,9 +72,9 @@ function NavbarComponent() {
                                                 </NavDropdown.Item>
                                             </NavDropdown>
 
-                                            <Link href="/conseil-faq" className={styles.navLink}>Conseils & FAQ</Link>
-                                            <Link href="/contact" className={styles.navLink}>Contact</Link>
-                                            <Link href="/actualites" className={styles.navLink}>Actualités</Link>
+                                            <Link href="/conseil-faq" className={`${isActif('/conseil-faq') ? styles.active : ''} ${styles.navLink}`}>Conseils & FAQ</Link>
+                                            <Link href="/contact" className={`${isActif('/contact') ? styles.active : ''} ${styles.navLink}`}>Contact</Link>
+                                            <Link href="/actualites" className={`${isActif('/actualites') ? styles.active : ''} ${styles.navLink}`}>Actualités</Link>
                                         </nav>
                                     </div>
                                 </Nav>
