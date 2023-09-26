@@ -46,12 +46,6 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    #offcanvasNavbarDropdown-expand-md {
-        padding-top: 0;
-        margin-top: 0;
-    }
-}
 .dropdown-menu{
     background-color: #EC1C24 !important;
     opacity: 0.8;
@@ -137,4 +131,8 @@ button {
 
 button:hover {
     background-color: #555;
+}
+#offcanvasNavbarDropdown{
+  margin: 0 !important;
+  padding: 0 !important;
 }

@@ -3,22 +3,20 @@
     height: auto;
 }
 
-.nav {
-    display: flex;
-    gap: 30px;
-}
-
 .rightContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.buttons {
+.buttons, .nav {
     display: flex;
     gap: 30px;
-    margin-bottom: 10px;
     color: white;
+}
+
+.buttons {
+    margin-bottom: 10px;
 }
 
 .nav a {
@@ -27,29 +25,20 @@
     transition: color 0.3s;
 }
 
-.active {
+.nav a:hover, .active {
     color: red !important;
 }
 
-.nav a:hover {
-    color: red;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .nav {
-        flex-direction: column !important;
-
+        flex-direction: column;
     }
 
     .rightContainer {
-        align-items: flex-start !important;
+        align-items: flex-start;
     }
 
-    .nav a {
-        color: black ;
-    }
-
-    .buttons {
+    .nav a, .buttons {
         color: black;
     }
 }
