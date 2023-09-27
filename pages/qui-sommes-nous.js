@@ -24,12 +24,12 @@ const QuiSommesNous = () => {
                 </div>
                 <h1 className="my-3">Nos valeurs</h1>
                 <div className="row text-center my-5">
-                    <div className="col-md-4 col-sm-12 d-flex"><CardVal text='Nous nous engageons à répondre rapidement
+                    <div className="col-lg-4 col-md-6 col-xs-12 d-flex"><CardVal text='Nous nous engageons à répondre rapidement
                      et efficacement aux besoins de nos clients.' title='Réactivité' img='écoute-.png' /></div>
-                    <div className="col-md-4 col-sm-12"><CardVal text="Nous valorisons l'innovation et cherchons
+                    <div className="col-lg-4 col-md-6 col-xs-12"><CardVal text="Nous valorisons l'innovation et cherchons
                      constamment à améliorer nos services et l'expérience
                     que nous offrons à nos clients." title='Innovation' img='Innovationn.png' /></div>
-                    <div className="col-md-4 col-sm-12"><CardVal text='Nous sommes déterminés à maintenir une relation
+                    <div className="col-lg-4 col-md-12 col-xs-12"><CardVal text='Nous sommes déterminés à maintenir une relation
                     humaine et personnalisée avec nos
                     clients, leur assurant un accompagnement de
                     qualité.' title='Proximité' img='proximité.png' /></div>
