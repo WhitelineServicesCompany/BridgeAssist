@@ -9,7 +9,7 @@ function CardVal(props) {
          {props.text}
         </Card.Text>
       </Card.Body>
-      <Card.Img variant="bottom" style={{borderRadius:'10px'}} src={`/images/${props.img}`}/>
+      <Card.Img variant="bottom" style={{borderRadius:'10px',height:'203px'}} src={`/images/${props.img}`}/>
     </Card>
   );
 }

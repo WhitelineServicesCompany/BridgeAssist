@@ -1,16 +1,34 @@
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import CardVal from "@/components/Card/Card";
-import styles from "@/styles/SommesNous.module.css"
+import styles from "@/styles/SommesNous.module.css";
 const QuiSommesNous = () => {
+    const cardValues = [
+        {
+            text: 'Nous nous engageons à répondre rapidement et efficacement aux besoins de nos clients.',
+            title: 'Réactivité',
+            img: 'écoute-.png'
+        },
+        {
+            text: "Nous valorisons l'innovation et cherchons constamment à améliorer nos services et l'expérience que nous offrons à nos clients.",
+            title: 'Innovation',
+            img: 'Innovationn.png'
+        },
+        {
+            text: 'Nous sommes déterminés à maintenir une relation humaine et personnalisée avec nos clients, leur assurant un accompagnement de qualité.',
+            title: 'Proximité',
+            img: 'proximité.png'
+        }
+    ];
     return (
+
         <main>
             <Header imgHeader={'CONTAACT.png'} title='Qui sommes-nous ?' />
             <div className="width2 mx-auto py-3 blueColor">
-                <p style={{ fontSize: '140%' }}>À propos de Bridge Assist</p>
+                <p className={styles.tailleTexteP}>À propos de Bridge Assist</p>
                 <h1 className="my-3">L’essence de Bridge Assist : <br />
                     Une approche innovante de l’assistance</h1>
-                <div className="pb-5" style={{ borderBottom: '1px solid #004C97' }}>
+                <div className={`pb-5 ${styles.bordureBasBleue}`}>
                     <p>Fondée avec la vision de révolutionner le paysage des assurances en Algérie, Bridge Assist est une société algérienne d'assistance dédiée à simplifier et
                         à améliorer la vie de ses clients. Nous envisageons un avenir où les sociétés d’assistance seront le premier interlocuteur des clients et donc leur premier
                         fournisseur de service dans le domaine de l’assurance.</p>
@@ -24,20 +42,16 @@ const QuiSommesNous = () => {
                 </div>
                 <h1 className="my-3">Nos valeurs</h1>
                 <div className="row text-center my-5">
-                    <div className="col-lg-4 col-md-6 col-xs-12 d-flex"><CardVal text='Nous nous engageons à répondre rapidement
-                     et efficacement aux besoins de nos clients.' title='Réactivité' img='écoute-.png' /></div>
-                    <div className="col-lg-4 col-md-6 col-xs-12"><CardVal text="Nous valorisons l'innovation et cherchons
-                     constamment à améliorer nos services et l'expérience
-                    que nous offrons à nos clients." title='Innovation' img='Innovationn.png' /></div>
-                    <div className="col-lg-4 col-md-12 col-xs-12"><CardVal text='Nous sommes déterminés à maintenir une relation
-                    humaine et personnalisée avec nos
-                    clients, leur assurant un accompagnement de
-                    qualité.' title='Proximité' img='proximité.png' /></div>
+                    {cardValues.map((card, index) => (
+                        <div key={index} className="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex mx-auto">
+                            <CardVal text={card.text} title={card.title} img={card.img} />
+                        </div>
+                    ))}
                 </div>
             </div>
             <div className="mb-5">
 
-                <div className={`row m-0 mb-3 py-5 ${styles.missions}`} style={{minHeight:'40vh'}}>
+                <div className={`row m-0 mb-3 py-5 ${styles.missions} ${styles.hauteurMinSection}`}>
                     <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                         <h1 className="fw-bold">Nos missions</h1>
                     </div>
@@ -50,7 +64,7 @@ const QuiSommesNous = () => {
                     </div>
                 </div>
 
-                <div className={`row m-0 py-5 ${styles.vision}`} style={{minHeight:'40vh'}}>
+                <div className={`row m-0 py-5 ${styles.vision} ${styles.hauteurMinSection}`}>
                     <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                         <h1 className="fw-bold">Notre vision</h1>
                     </div>

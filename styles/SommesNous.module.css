@@ -1,15 +1,27 @@
-.missions {
-    background-image: url('/images/Mission-2.png');
+/* Styles communs */
+.missions, .vision {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
 }
 
+.missions {
+    background-image: url('/images/Mission-2.png');
+}
+
 .vision {
     background-image: url('/images/Vision-2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
+}
+
+.tailleTexteP {
+    font-size: 140%;
+}
+
+.bordureBasBleue {
+    border-bottom: 1px solid #004C97;
+}
+
+.hauteurMinSection {
+    min-height: 40vh;
 }
