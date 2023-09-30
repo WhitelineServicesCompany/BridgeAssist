@@ -2,7 +2,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import styles from "../BProduits.module.css"
 import Bouton from '@/components/Button/Button'
-import { FaGreaterThan } from 'react-icons/fa';
+
 const BTravel = () => {
     return (
         <main>
@@ -15,7 +15,7 @@ const BTravel = () => {
                 <div className={`${styles.rightContainer}`}></div>
             </div>
             <div className={`d-none ${styles.imgtop}`}>
-                    <div className={`${styles.imag1} mx-auto`} style={{ width:'80%',height:'250px' }}>
+                    <div className={`${styles.imag1} mx-auto`}>
                   <div className={`${styles.imag2}`} style={{backgroundImage: `url('/images/avion.jpg')`}}>
 
                     </div>
@@ -23,7 +23,7 @@ const BTravel = () => {
                    
                 </div>
             <div className={`${styles.BFlex} width2 my-5 blueColor`}>
-                <div className={`${styles.leftContainer}  ${styles.leftContainer2} pb-3`} style={{ backgroundColor: '#EFF4F9', boxShadow: ' 0 0 20px rgba(0, 0, 0, 0.5)' }}>
+                <div className={`${styles.leftContainer}  ${styles.leftContainer2} pb-3`}>
                     <h2 className="redColor">Description du produit :</h2>
                     <p className="fw-semibold">Notre produit d’assistance voyage couvre un large éventail de situations, de l'annulation
                         de vols aux urgences médicales à l'étranger, en passant par la perte de
@@ -46,7 +46,7 @@ const BTravel = () => {
   
                 </div>
                 <div className={`${styles.rightContainer}`}>
-                    <div className={`${styles.image}`} style={{ backgroundImage: `url('/images/avion.jpg')` }}>
+                    <div className={`${styles.image}`} style={{ backgroundImage: `url('/images/avion.jpg')`}}>
 
                     </div>
                     <div className={`${styles.image2}`}>

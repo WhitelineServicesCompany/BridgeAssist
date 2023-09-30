@@ -17,7 +17,7 @@ n'a jamais été aussi facile avec B-Home." />
                 <div className={`${styles.rightContainer}`}></div>
             </div>
             <div className={`d-none ${styles.imgtop}`}>
-                    <div className={`${styles.imag1} mx-auto`} style={{ width:'80%',height:'250px' }}>
+                    <div className={`${styles.imag1} mx-auto`}>
                   <div className={`${styles.imag2}`} style={{backgroundImage: `url('/images/Plombier.jpg')`}}>
 
                     </div>
@@ -25,7 +25,7 @@ n'a jamais été aussi facile avec B-Home." />
                    
                 </div>
             <div className={`${styles.BFlex} width2 my-5 blueColor`}>
-                <div className={`${styles.leftContainer} ${styles.leftContainer2} `} style={{ backgroundColor: '#EFF4F9', boxShadow: ' 0 0 20px rgba(0, 0, 0, 0.5)' }}>
+                <div className={`${styles.leftContainer} ${styles.leftContainer2} `}>
                     <h2 className="redColor">Description du produit :</h2>
                     <p className="fw-semibold">Notre produit d'assistance domiciliaire vous offre une tranquillité d'esprit totale à
                         la maison. Que vous soyez confronté à un problème de plomberie, d'électricité, de
@@ -44,7 +44,7 @@ n'a jamais été aussi facile avec B-Home." />
                         En cas de problème à la maison, vous n'avez qu'à nous appeler. Nous enverrons
                         un professionnel pour prendre en charge votre sinistre en un temps record.
                     </p>
-                    <div><h2 className="blueColor my-3 text-end">Découvrir nos packs <FaGreaterThan className="fs-6 redColor" style={{}} /></h2></div>
+                    <div><h2 className="blueColor my-3 text-end">Découvrir nos packs <FaGreaterThan className="fs-6 redColor" /></h2></div>
                 </div>
                 <div className={`${styles.rightContainer}`}>
                     <div className={`${styles.image}`} style={{ backgroundImage: `url('/images/Plombier.jpg')` }}>

@@ -3,47 +3,56 @@
   margin: auto;
 }
 
+.leftContainer,
+.leftContainer2 {
+  padding-left: 30px;
+}
+
 .leftContainer {
   flex: 2;
   padding-right: 100px;
   padding-top: 30px;
-  padding-left: 30px;
   border-radius: 30px;
+}
+
+.leftContainer2 {
+  background-color: #EFF4F9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.image,
+.image2,
+.imag1,
+.imag2 {
+  border-top-left-radius: 100% 50%;
+  border-top-right-radius: 100% 50%;
+  border-bottom-left-radius: 100% 50%;
+  border-bottom-right-radius: 100% 50%;
+  overflow: hidden; /* Cache le débordement de l'image arrondie */
+}
+
+.image,
+.image2 {
+  height: 120%;
+  width: 120%;
+  max-width: 340px;
+  position: absolute;
+  overflow: hidden;
 }
 
 .image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 120%;
-  width: 120%;
-  max-width: 340px;
-  position: absolute;
   left: -50px;
   top: -30%;
   z-index: 99999;
-  border-top-left-radius: 100% 50%;
-  border-top-right-radius: 100% 50%;
-  border-bottom-left-radius: 100% 50%;
-  border-bottom-right-radius: 100% 50%;
-  overflow: hidden;
-  /* Cache le débordement de l'image arrondie */
 }
 
 .image2 {
   background: linear-gradient(to bottom left, #004C97, #EC1C24);
-  height: 120%;
-  width: 120%;
-  max-width: 340px;
-  position: absolute;
   top: -25%;
   left: -30px;
-  border-top-left-radius: 100% 50%;
-  border-top-right-radius: 100% 50%;
-  border-bottom-left-radius: 100% 50%;
-  border-bottom-right-radius: 100% 50%;
-  overflow: hidden;
-  /* Cache le débordement de l'image arrondie */
 }
 
 .rightContainer {
@@ -52,72 +61,67 @@
 }
 
 .customlist {
-  list-style-type: none;
-  /* Désactive les puces par défaut */
-  padding-left: 0;
-  /* Supprime le retrait par défaut de la liste */
+  list-style-type: none; /* Désactive les puces par défaut */
+  padding-left: 0; /* Supprime le retrait par défaut de la liste */
 }
 
 .customlist li::before {
   content: "- ";
-  /* Ajoute un tiret suivi d'un espace avant chaque élément */
   display: inline-block;
-  /* Fait en sorte que le tiret soit affiché en ligne avec le texte */
   width: 1em;
-  /* Ajuste la largeur de l'espace entre le tiret et le texte */
   margin-left: -1em;
-  /* Compense la largeur ajoutée pour aligner correctement le texte */
 }
-.imag1{
+
+.imag1 {
+  width: 80%;
+  max-width: 450px;
+  margin: auto;
+  height: 250px;
   background: linear-gradient(to bottom, #004C97, #EC1C24);
   position: relative;
-  border-top-left-radius:100% 50% ;
-  border-top-right-radius: 100% 50% ;
-  border-bottom-left-radius: 100% 50% ;
-  border-bottom-right-radius: 100% 50% ;
-  overflow: hidden; /* Cache le débordement de l'image arrondie */
   margin-bottom: -100px;
 }
-.imag2{
+
+.imag2 {
   position: absolute;
   width: 100%;
+  max-width: 450px;
   height: 100%;
-
   bottom: -20px;
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  border-top-left-radius:100% 50% ;
-  border-top-right-radius: 100% 50% ;
-  border-bottom-left-radius: 100% 50% ;
-  border-bottom-right-radius: 100% 50% ;
-  overflow: hidden; /* Cache le débordement de l'image arrondie */
 }
- @media screen and (max-width: 880px) {
+
+/* Media queries */
+
+@media screen and (max-width: 880px) {
   .leftContainer {
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    border-radius: 0px;
-    margin: auto;
+    padding-top: 0;
+    padding-right: 0;
+    border-radius: 0;
   }
+
   .leftContainer2 {
-    padding-right: 30px !important;
-    padding-left: 30px;
-    padding-top: 100px !important;
+    padding-right: 30px;
+    padding-top: 100px;
   }
+
   .BFlex {
-   flex-direction: column !important;
-   margin-block: 20px !important;
+    flex-direction: column;
+    margin-block: 20px;
   }
- .rightContainer{
-  display: none;
- }
-  .imgtop{
+
+  .rightContainer {
+    display: none;
+  }
+
+  .imgtop {
     display: block !important;
   }
+
   .image {
-    background-position:top !important;
+    background-position: top;
   }
 }
