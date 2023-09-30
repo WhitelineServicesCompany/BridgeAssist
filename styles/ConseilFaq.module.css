@@ -1,17 +1,29 @@
 .container {
-    display: flex;
-    align-items: end;
-    gap: 25px;
-  }
-  
-.icon {
-    width: auto;
-    height: 25px;
-    margin-bottom: 10px;
-  }
-  .avion{
-    border-top-left-radius:100% 100% ;
-    border-top-right-radius: 100% 100% ;
-    background-color: #EC1C24;
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
 }
-  
+
+.icon {
+  width: auto;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.avion {
+  border-radius: 100% 100% 0 0; 
+  background-color: #EC1C24;
+}
+
+.title {
+  margin: 3rem 10px 0 0; 
+}
+
+.divider {
+  border-bottom: 1px solid #004C97;
+}
+@media screen and (max-width: 767px) {
+  .icon {
+    height: 15px;
+  }
+}
