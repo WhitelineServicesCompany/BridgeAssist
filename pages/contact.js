@@ -3,6 +3,17 @@ import Footer from "@/components/Footer/Footer";
 import styles from "@/styles/Contact.module.css"
 import Image from "next/image";
 import React, { useState } from 'react';
+const Bouton = () => {
+    return (
+        <div className={`${styles.button} mt-4`}>
+            <span className={styles.circle}>
+                <span className={styles.fleche}>▼</span>
+            </span>
+            Envoyer
+        </div>
+
+    );
+}
 const Contact = () => {
     const [selectedButton, setSelectedButton] = useState('client');
     return (
@@ -47,9 +58,9 @@ const Contact = () => {
                                         <label htmlFor="message">Message:</label>
                                         <textarea id="message" name="message" rows="4"></textarea>
                                     </div>
-                                    <div>
-                                        <button type="submit">Envoyer</button>
-                                    </div>
+                             
+                                        <Bouton />
+                                  
                                 </form>
                             </div>
                         )}
@@ -75,9 +86,7 @@ const Contact = () => {
                                         <label htmlFor="tel">Numéro de Téléphone *</label>
                                         <input type="tel" id="tel" name="tel" />
                                     </div>
-                                    <div>
-                                        <button type="submit">Envoyer</button>
-                                    </div>
+                                      <Bouton />
                                 </form>
                             </div>
                         )}
