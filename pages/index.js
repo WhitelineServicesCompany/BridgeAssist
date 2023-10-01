@@ -5,6 +5,7 @@ import Header from '@/components/Header/Header'
 import Bouton from '@/components/Button/Button'
 import Footer from '@/components/Footer/Footer';
 import Link from 'next/link';
+import React, { useState } from 'react';
 export default function Home() {
   const Benefits = () => {
     const benefitsData = [
@@ -36,13 +37,27 @@ export default function Home() {
     );
   };
 
-  const BenefitBox = ({ data }) => (
-    <div className={`${style.rounded1} ${style.gradientbox} ${style.contentbox}`}>
-      <Image src={data.image} alt={data.title} width={50} height={50} />
-      <h2>{data.title}</h2>
-      <p>{data.description}</p>
-    </div>
-  );
+  const BenefitBox = ({ data }) => {
+    const [isDescriptionVisible, setDescriptionVisibility] = useState(false);
+  
+    const handleToggleDescription = () => {
+      setDescriptionVisibility(prevVisibility => !prevVisibility);
+    };
+  
+    return (
+      <div 
+      className={`${style.rounded1} ${style.gradientbox} ${style.contentbox} ${!isDescriptionVisible ? "description-arrondi" : ""}`}
+        onClick={handleToggleDescription}
+      >
+        <Image src={data.image} alt={data.title} width={50} height={50} />
+        <h2>{data.title}</h2>
+        <p className={!isDescriptionVisible ? "description-hidden" : ""}>
+          {data.description}
+        </p>
+      </div>
+    );
+  };
+  
   const productsData = [
     {
       href: "/Produits/B-Auto",

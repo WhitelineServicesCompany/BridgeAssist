@@ -93,7 +93,7 @@ const Footer = () => {
                         </a>
                     </div>
                     </div>
-                 <div style={{width:'100%',textAlign:'left'}}>
+                 <div style={{width:'100%',textAlign:'center'}}>
                       {iconeSelectionnee === 'phone' && <p>+213 00 00 00 00</p>}
                     {iconeSelectionnee === 'email' && <p>lorem@ipsum.oi</p>}
                     {iconeSelectionnee === 'address' && <p>Lorem Ipsum dafrin qoda, para esty</p>}

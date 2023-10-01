@@ -10,10 +10,11 @@
 }
 
 .rounded1 {
-    border-bottom-left-radius: 60% 40%;
-    border-bottom-right-radius: 60% 40%;
-    border-top-left-radius: 60% 40%;
-    border-top-right-radius: 60% 40%;
+    min-height: 200px;
+    border-bottom-left-radius: 70% 40%;
+    border-bottom-right-radius: 70% 40%;
+    border-top-left-radius: 70% 40%;
+    border-top-right-radius: 70% 40%;
 }
 
 .contentbox {
@@ -104,7 +105,7 @@
 /* Media Queries */
 @media screen and (max-width: 767px) {
     .para {
-        display: none;
+        display: none !important;
     }
 
     .Hovcontimg h1 {
