@@ -150,8 +150,8 @@ const Contact = () => {
                     border: '0',
                     width: '100%',
                     height: '60vh',
-                    borderTopLeftRadius: '50% 50%',  // Arrondir le coin supérieur gauche
-                    borderTopRightRadius: '50% 50%',  // Arrondir le coin supérieur droit
+                    borderTopLeftRadius: '50% 50%',
+                    borderTopRightRadius: '50% 50%', 
                 }}
                 className={`${styles.Index}`}
                 loading='lazy'

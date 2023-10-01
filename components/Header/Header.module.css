@@ -48,7 +48,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .titleHeader {
         font-size: 40px;
     }
