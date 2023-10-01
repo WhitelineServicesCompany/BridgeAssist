@@ -41,3 +41,17 @@
   width: 130px;
   height: auto;
 }
+.footer {
+  font-size: 14px;
+}
+.logoAndLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.iconAndSocialContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

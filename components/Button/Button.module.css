@@ -36,6 +36,15 @@
     font-weight: bold;
     font-size: 1rem;
 }
-.button:hover{
+
+.button:hover {
     background-color: white !important;
+}
+
+@media (max-width: 768px) {
+    .button {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
 }

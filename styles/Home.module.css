@@ -10,7 +10,6 @@
 }
 
 .rounded1 {
-    min-height: 200px;
     border-bottom-left-radius: 70% 40%;
     border-bottom-right-radius: 70% 40%;
     border-top-left-radius: 70% 40%;
@@ -46,7 +45,8 @@
     color: white;
     z-index: 99;
     text-align: center;
-    margin-bottom: 4rem;
+    padding: 3rem;
+    margin:0;
 }
 
 /* Image container styles */
@@ -110,6 +110,9 @@
 
     .Hovcontimg h1 {
         font-size: 20px;
+    }
+    .headertext {
+        padding: 1rem;
     }
 }
 

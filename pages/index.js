@@ -46,10 +46,10 @@ export default function Home() {
   
     return (
       <div 
-      className={`${style.rounded1} ${style.gradientbox} ${style.contentbox} ${!isDescriptionVisible ? "description-arrondi" : ""}`}
+      className={`rounded1 ${style.rounded1} ${style.gradientbox} ${style.contentbox} ${!isDescriptionVisible ? "description-arrondi" : ""}`}
         onClick={handleToggleDescription}
       >
-        <Image src={data.image} alt={data.title} width={50} height={50} />
+        <Image className='imgslog' src={data.image} alt={data.title} width={50} height={50} />
         <h2>{data.title}</h2>
         <p className={!isDescriptionVisible ? "description-hidden" : ""}>
           {data.description}
@@ -93,7 +93,7 @@ export default function Home() {
         <title>Bridge Assistant</title>
       </Head>
       <main>
-        <Header imgHeader={'BA_Website_PagesHOME PAGE-10.png'} title='Un pont vers une vie épanouie chez vous' />
+        <Header imgHeader={'BA_Website_PagesHOME PAGE-10.png'} title="L'assistance du futur, déjà à vos côtés !" />
         <div className={`text-center m-auto mt-5 width2 blueColor`}>
           <h1>Pourquoi nous choisir ?</h1>
           <p className='m-3'>Choisir Bridge Assist, c'est opter pour une tranquillité d'esprit inégalée. Nous offrons une assistance personnalisée, réactive et innovante. Découvrez
@@ -107,7 +107,7 @@ export default function Home() {
           <div className={`${style.firstchilddiv}`} >
 
           </div>
-          <div className={`${style.secondchilddiv} width2 mx-auto py-5`}>
+          <div className={`${style.secondchilddiv} width2 mx-auto pb-5`}>
             <h1 className={`${style.headertext}`}>Nos produits</h1>
             <div className={`${style.conteneur}`}>
               {productsData.map((product, index) => (
